@@ -21,7 +21,7 @@ function generateCaptcha(){
 
 // Validate the User's Input
 function validateCaptcha() {
-    const userInput = document.getElementById("captcha-input").value;
+    const userInput = document.getElementById("captcha-input").value.trim().toUpperCase();;
     const captchaText = document.getElementById("captcha-text").innerText;
     const message = document.getElementById("captcha-message");
 
